@@ -1,0 +1,12 @@
+{{#each notes}}
+
+<div>
+    <form style="display: inline-block;" method='post' action='/{{id}}'>
+    <textarea cols=40 rows=5 name="noted">{{note}}</textarea>
+    <button>Update</button></form>
+    <form style="display: inline-block;" method='get' action='/{{id}}'>
+    <button>Delete</button></form>
+    
+</div>
+
+{{/each}}
